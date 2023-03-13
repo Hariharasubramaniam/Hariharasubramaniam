@@ -6,7 +6,7 @@ const About = () => {
       <div className="flex flex-col justify-center item-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">
-            <p className="text-4xl font-bold inline border-b-4 border-orange-600">
+            <p className="animate-pulse text-4xl font-bold inline border-b-4 border-orange-600">
               About
             </p>
           </div>
@@ -17,7 +17,7 @@ const About = () => {
             <p>Hi. I'm Hari, nice to meet you. Please take a look around.</p>
           </div>
           <div>
-            <p>
+            <p className="text-orange-600">
               I'm very much interested in animations and also a passionate
               gamer. Since, Web-dev is a hot topic, I have decided to spare some
               of my time to learn that too. Deep Learning is the next stop in my

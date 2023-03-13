@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes, FaGithub, FaInstagram } from "react-icons/fa";
+import {
+  FaBars,
+  FaTimes,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+} from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import MyVideo from "../assets/Hari.mp4";
@@ -55,6 +61,14 @@ const Navbar = () => {
               href="/"
             >
               Github <FaGithub size={30} />
+            </a>
+          </li>
+          <li className="w-[170px] h-[60px] flex justify-between items-center ml-[-110px] hover:ml-[-10px] duration-300 bg-blue-900">
+            <a
+              className="flex justify-between items-center w-full text-white"
+              href="/"
+            >
+              LinkedIn <FaLinkedin size={30} />
             </a>
           </li>
           <li className="w-[170px] h-[60px] flex justify-between items-center ml-[-110px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
