@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <div
       className="fixed w-full h-[95px] flex justify-between items-center px-4
-      bg-[#0a185f] text-gray-100"
+      bg-[#0a185f] text-blue-200"
     >
       <div>
         <video src={MyVideo} autoPlay loop muted style={{ width: "90px" }} />
@@ -42,7 +42,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a185f] flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-full h-screen bg-[#11175e] flex flex-col justify-center items-center"
         }
       >
         <li className="py-6 text-4xl">Home</li>
