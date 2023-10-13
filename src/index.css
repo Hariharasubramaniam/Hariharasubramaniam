@@ -13,3 +13,35 @@
         @apply cursor-pointer;
     }
 }
+
+@keyframes changeBorderColor {
+    0% { border-color: rgb(225, 0, 255); }
+    25% { border-color: rgb(0, 68, 255); }
+    50% { border-color: rgb(5, 132, 190); }
+    75% { border-color: rgb(0, 247, 255); }
+    100% { border-color: rgb(190, 7, 7); }
+  }
+  
+  .glowing-border {
+    animation: changeBorderColor 3s linear infinite;
+    border-width: 10px;
+    border-style: solid;
+    border-color: red; /* Initial border color */
+    opacity: 1;
+    transition: box-shadow 0.3s ease-in-out;
+    
+  }
+
+  .glowing-border:hover {
+    box-shadow: 0 0 50px rgb(0, 255, 255); /* Glow effect on hover */
+  }
+  
+  @keyframes pulse {
+    75% {
+        opacity: 0.75;
+    }
+}
+.animate-pulse {
+    animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+  
