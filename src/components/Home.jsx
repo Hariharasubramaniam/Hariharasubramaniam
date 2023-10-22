@@ -6,7 +6,7 @@ import MyPhoto from "../assets/Photo.jpeg";
 const Home = () => {
   return (
     <div className="w-full h-screen bg-[#0a185f] flex justify-center items-center">
-      <div className="text-left">
+      <div className="text-left pr-20">
         <p className="text-orange-600 text-3xl font-semibold">Hi, my name is</p>
         <h1 className="animate-pulse bg-gradient-to-r from-[#81a0ff] to-yellow-500 bg-clip-text text-transparent text-4xl my-2 sm:text-5xl font-bold">
           S.Hariharasubramaniam

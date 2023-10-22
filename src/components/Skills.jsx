@@ -14,7 +14,7 @@ const Skills = () => {
       {/* Container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
-          <p className="animate-pulse bg-gradient-to-r from-red-500 via-yellow-500 to-violet-600 bg-clip-text text-transparent text-4xl font-bold inline border-b-4 border-orange-600">
+          <p className="animate-pulse bg-gradient-to-r from-red-500 to-yellow-600 bg-clip-text text-transparent text-4xl font-bold inline border-b-4 border-orange-600">
             Experience
           </p>
           <p className="py-4">
