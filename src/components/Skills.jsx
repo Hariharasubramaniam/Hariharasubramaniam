@@ -7,6 +7,8 @@ import Tailwind from "../assets/tailwind.png";
 import JS from "../assets/js.png";
 import REACT from "../assets/react.png";
 import GitHub from "../assets/github.png";
+import CSS from "../assets/CSS.png";
+import Firebase from "../assets/Firebase.png";
 
 const Skills = () => {
   return (
@@ -21,7 +23,7 @@ const Skills = () => {
             I can handle the following languages and frameworks..
           </p>
         </div>
-        <div className="w-full grid grid-col-1 sm:grid-cols-4 gap-4 text-center py-8">
+        <div className="w-full grid grid-col-1 sm:grid-cols-3 gap-4 text-center py-8">
           <div className="shadow-md shadow-[040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={Java} alt="Java icon" />
             <p className="my-[16.5px] text-2xl font-bold ">JAVA</p>
@@ -34,15 +36,25 @@ const Skills = () => {
             <img className="w-20 mx-auto" src={HTML} alt="Html icon" />
             <p className="my-[48px] text-2xl font-bold ">HTML</p>
           </div>
+        </div>
+        <div className="w-full grid grid-col-1 sm:grid-cols-3 text-center py-8">
+          <div className="shadow-md shadow-[040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={CSS} alt="Html icon" />
+            <p className="my-[48px] text-2xl font-bold ">CSS</p>
+          </div>
           <div className="shadow-md shadow-[040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={Tailwind} alt="Tailwind icon" />
             <p className="my-[48px] text-2xl font-bold ">TAILWIND</p>
           </div>
-        </div>
-        <div className="w-full grid grid-col-1 sm:grid-cols-3 text-center py-8">
           <div className="shadow-md shadow-[040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={JS} alt="Javascript icon" />
             <p className="my-[48px] text-2xl font-bold ">JAVASCRIPT</p>
+          </div>
+        </div>
+        <div className="w-full grid grid-col-1 sm:grid-cols-3 text-center py-8">
+          <div className="shadow-md shadow-[040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={Firebase} alt="Firebase icon" />
+            <p className="my-[48px] text-2xl font-bold ">FIREBASE</p>
           </div>
           <div className="shadow-md shadow-[040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={REACT} alt="React icon" />
