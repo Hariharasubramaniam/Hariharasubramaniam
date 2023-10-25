@@ -17,7 +17,7 @@ const About = () => {
             <p>Hi. I'm Hari, nice to meet you. Please take a look around.</p>
           </div>
           <div>
-            <p className="text-orange-600">
+            <p className="text-xl text-orange-600">
               I'm very much interested in animations and also a passionate
               gamer. Since, Web-dev is a hot topic, I have decided to spare some
               of my time to learn that too. Deep Learning is the next stop in my

@@ -19,7 +19,7 @@ const Skills = () => {
           <p className="animate-pulse bg-gradient-to-r from-red-500 to-yellow-600 bg-clip-text text-transparent text-4xl font-bold inline border-b-4 border-orange-600">
             Experience
           </p>
-          <p className="py-4">
+          <p className="text-xl py-4">
             I can handle the following languages and frameworks..
           </p>
         </div>
