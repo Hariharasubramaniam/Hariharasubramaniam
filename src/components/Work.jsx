@@ -16,7 +16,7 @@ const Work = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           <div
             style={{ backgroundImage: `url(${HandImg})` }}
-            className="shadow-xl shadow-[#e0825c] group container rounded-md flex justify-center item-center mx-auto content-div"
+            className="p-2 glowing-border group container rounded-md flex justify-center item-center mx-auto content-div"
           >
             {/* Hover Effects*/}
             <div className="opacity-0 group-hover:opacity-100">
