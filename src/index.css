@@ -41,4 +41,19 @@
     hsla(283, 87%, 65%, 0.8)
     )!important;
 }
-  
+ 
+.content-div2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 250px;
+}
+
+.content-div2:hover {
+    background-image: linear-gradient(to right,
+    rgba(0, 247, 255, 0.8),
+    hsla(41, 100%, 50%, 0.8)
+    )!important;
+}
+
