@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <div className="w-full h-screen bg-[#0a185f] flex justify-center items-center">
       <div className="text-left pr-20">
-        <p className="text-orange-600 text-3xl font-semibold">Hi, my name is</p>
-        <h1 className="animate-pulse bg-gradient-to-r from-[#81a0ff] to-yellow-500 bg-clip-text text-transparent text-4xl my-2 sm:text-5xl font-bold">
+        <p className="text-orange-500 text-3xl font-semibold">Hi, my name is</p>
+        <h1 className="bg-gradient-to-r from-[#6cffdfe7] to-yellow-400 bg-clip-text text-transparent text-4xl my-2 sm:text-5xl font-bold">
           S.Hariharasubramaniam
         </h1>
         <div>
@@ -22,7 +22,7 @@ const Home = () => {
             />
           </h2>
           <h2 className="text-4xl sm:text-5xl my-2 font-bold text-[#e6c94b]">
-            Tyro in &nbsp;
+            Learning &nbsp;
             <Typed
               strings={["Web-Dev", "Deep Learning"]}
               typeSpeed={60}
@@ -31,7 +31,7 @@ const Home = () => {
             />
           </h2>
         </div>
-        <p className="text-orange-600 py-4 max-w-[700px] text-[21px]">
+        <p className="text-orange-500 py-4 max-w-[700px] text-[21px]">
           I have a strong hand in Music.<br></br>Very much interested in
           front-end development🤩
         </p>
@@ -39,7 +39,7 @@ const Home = () => {
           <button className="text-white rounded-lg group border-2 px-6 py-3 my-2 flex items-center hover:bg-orange-600 hover:border-orange-600">
             View work
             <span className="group-hover:rotate-90 duration-300">
-              <HiArrowNarrowRight className="flex ml-3 justify-center items-center" />
+              <HiArrowNarrowRight className="flex justify-center items-center" />
             </span>
           </button>
         </div>
