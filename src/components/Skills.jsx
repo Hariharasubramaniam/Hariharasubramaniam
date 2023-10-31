@@ -16,7 +16,7 @@ const Skills = () => {
       {/* Container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
-          <p className="animate-pulse text-gray-300 bg-clip-text text-transparent text-4xl font-bold inline border-b-4 border-orange-600">
+          <p className="animate-pulse text-gray-300 text-4xl font-bold inline border-b-4 border-orange-600">
             Experience
           </p>
           <p className="text-xl py-4">
