@@ -9,7 +9,6 @@ import {
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import MyVideo from "../assets/Hari.mp4";
-import { Navigation } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -59,7 +58,9 @@ const Navbar = () => {
           <li className="w-[170px] h-[60px] flex justify-between items-center ml-[-110px] hover:ml-[-10px] duration-300 bg-[black]">
             <a
               className="flex justify-between items-center w-full text-white"
-              href="/"
+              href="https://github.com/ig-BaymaX"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Github <FaGithub size={30} />
             </a>
@@ -67,7 +68,9 @@ const Navbar = () => {
           <li className="w-[170px] h-[60px] flex justify-between items-center ml-[-110px] hover:ml-[-10px] duration-300 bg-blue-900">
             <a
               className="flex justify-between items-center w-full text-white"
-              href="/"
+              href="https://www.linkedin.com/in/s-hariharasubramaniam-69a1a926a/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               LinkedIn <FaLinkedin size={30} />
             </a>
