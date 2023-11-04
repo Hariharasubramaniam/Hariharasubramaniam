@@ -79,6 +79,8 @@ const Navbar = () => {
             <a
               className="flex justify-between items-center w-full text-white"
               href="/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Email <HiOutlineMail size={30} />
             </a>
@@ -86,7 +88,9 @@ const Navbar = () => {
           <li className="w-[170px] h-[60px] flex justify-between items-center ml-[-110px] hover:ml-[-10px] duration-300 bg-[#df16df]">
             <a
               className="flex justify-between items-center w-full text-white"
-              href="/"
+              href="https://www.instagram.com/_._h.a.r.iii.__/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Instagram <FaInstagram size={30} />
             </a>
