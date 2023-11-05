@@ -20,7 +20,7 @@ const Skills = () => {
             Experience
           </p>
           <p className="text-xl py-4">
-            I can handle the following languages and frameworks..
+            I can handle the following languages and frameworks.
           </p>
         </div>
         <div className="w-full grid grid-col-1 sm:grid-cols-3 gap-4 text-center py-8">
