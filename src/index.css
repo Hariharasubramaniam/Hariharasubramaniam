@@ -71,3 +71,19 @@
     hsla(244, 96%, 49%, 0.8)
     )!important;
 }
+
+.image{
+    margin-left: -1px;
+    margin-top: -1px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.content-skill {
+    animation: spin 4s linear;
+    transform: rotate(360deg);
+    transition: transform 0.25s ease-in-out;
+
+}
