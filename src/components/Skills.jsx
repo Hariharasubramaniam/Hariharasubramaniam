@@ -1,6 +1,6 @@
 import React from "react";
 import { Parallax } from "react-parallax";
-import Bgskills from "../assets/SkillsBG.jpg";
+import Bgskills from "../assets/Background.jpg";
 
 import Java from "../assets/java.png";
 import Python from "../assets/py.png";
