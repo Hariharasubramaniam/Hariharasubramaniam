@@ -2,16 +2,18 @@ import React from "react";
 import Sleep from "../assets/SleepECG.png";
 import HandImg from "../assets/Hand.jpeg";
 import Todo from "../assets/Todo.jpeg";
+import WorkBG from "../assets/Work.jpg";
+import { Parallax } from "react-parallax";
 
 const Work = () => {
   return (
-    <div name="work" className="w-full md:screen text-[#8892b0] bg-[#000000]">
+    <div name="work" className="w-full md:screen text-[#a28be0] bg-black">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="animate-pulse text-4xl font-bold inline border-b-4 text-gray-300 border-orange-600">
             Work
           </p>
-          <p className="text-xl py-6">Check out some of my works🧑‍💻</p>
+          <p className="text-2xl py-6">Check out some of my works🧑‍💻</p>
         </div>
 
         {/* Container  */}
@@ -37,7 +39,7 @@ const Work = () => {
           </div>
           <div
             style={{ backgroundImage: `url(${Todo})` }}
-            className="p-2 glowing-border group container rounded-md flex justify-center item-center mx-auto content-div2"
+            className="p-2 glowing-border group container rounded-md flex justify-start item-center mx-auto content-div2"
           >
             {/* Hover Effects*/}
             <div className="opacity-0 group-hover:opacity-100">
