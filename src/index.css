@@ -35,12 +35,6 @@
     height: 250px;
 }
 
-.content-div:hover {
-    background-image: linear-gradient(to right,
-    rgba(27, 96, 247, 0.8),
-    hsla(283, 87%, 65%, 0.8)
-    )!important;
-}
  
 .content-div2 {
     background-repeat: no-repeat;
@@ -50,12 +44,6 @@
     height: 250px;
 }
 
-.content-div2:hover {
-    background-image: linear-gradient(to right,
-    rgba(183, 0, 255, 0.459),
-    hsla(251, 100%, 50%, 0.8)
-    )!important;
-}
 
 .content-div3 {
     background-repeat: no-repeat;
@@ -65,12 +53,6 @@
     height: 250px;
 }
 
-.content-div3:hover {
-    background-image: linear-gradient(to right,
-    rgba(194, 0, 253, 0.8),
-    hsla(244, 96%, 49%, 0.8)
-    )!important;
-}
 
 .image{
     margin-left: -1px;
