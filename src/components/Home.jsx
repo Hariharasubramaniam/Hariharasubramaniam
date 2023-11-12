@@ -1,19 +1,34 @@
 import React from "react";
 import Typed from "react-typed";
-import Bg from "../assets/Background.jpg";
+import Bg from "../assets/Background.mp4";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import MyPhoto from "../assets/Photo.jpeg";
 import { Parallax } from "react-parallax";
 
 const Home = () => {
   return (
-    <Parallax
-      className="image"
-      blur={{ min: -1, max: 1 }}
-      bgImage={Bg}
-      strength="1000"
-    >
-      <div className="w-full h-screen flex justify-center items-center">
+    <div style={{ position: "relative" }}>
+      <Parallax bgImage={Bg} strength={1000}>
+        <video
+          autoPlay
+          loop
+          muted
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+        >
+          <source src={Bg} type="video/mp4" />
+        </video>
+      </Parallax>
+      <div
+        name="home"
+        className="w-full h-full flex justify-center items-center"
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          zIndex: 1,
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
+        }}
+      >
         <div className="text-left pr-20">
           <p className="text-orange-500 text-3xl font-semibold">
             Hi, my name is
@@ -62,7 +77,7 @@ const Home = () => {
           />
         </div>
       </div>
-    </Parallax>
+    </div>
   );
 };
 
