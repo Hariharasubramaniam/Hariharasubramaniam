@@ -15,7 +15,7 @@
 }
 
   .glowing-border:hover {
-    box-shadow: 0 0 50px rgb(0, 255, 255); /* Glow effect on hover */
+    box-shadow: 0 0 50px rgb(255, 0, 76); /* Glow effect on hover */
   }
   
   @keyframes pulse {
