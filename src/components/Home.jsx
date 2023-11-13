@@ -2,7 +2,7 @@ import React from "react";
 import Typed from "react-typed";
 import Bg from "../assets/Background.mp4";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import MyPhoto from "../assets/Photo.jpeg";
+import MyPhoto from "../assets/Hari_new.JPG";
 import { Parallax } from "react-parallax";
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
           autoPlay
           loop
           muted
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          style={{ width: "100%", height: "100%", objectFit: "contain" }}
         >
           <source src={Bg} type="video/mp4" />
         </video>
@@ -26,7 +26,7 @@ const Home = () => {
           top: 0,
           left: 0,
           zIndex: 1,
-          backgroundColor: "rgba(0, 0, 0, 0.5)",
+          backgroundColor: "rgba(0, 0, 0, 0.9)",
         }}
       >
         <div className="text-left pr-20">
@@ -69,9 +69,9 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div className="rounded-full border-[#46179c] p-2 glowing-border">
+        <div className="rounded-full border-[#9c1717] p-2 glowing-border">
           <img
-            className="w-80 rounded-full shadow-[0_0_75px_theme('colors.blue.500'),0_0_50px_theme('colors.violet.700'),0_0_75px_theme('colors.red.500')]"
+            className="w-80 rounded-full shadow-[0_0_75px_theme('colors.violet.500'),0_0_50px_theme('colors.red.700'),0_0_75px_theme('colors.orange.500')]"
             src={MyPhoto}
             alt="My Photo"
           />
