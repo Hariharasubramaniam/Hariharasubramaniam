@@ -98,4 +98,6 @@
   
 } */
 
-  
+.float-up{
+    animation: float-up 2s ease-in-out infinite;
+}

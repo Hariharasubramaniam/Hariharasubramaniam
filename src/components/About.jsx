@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div name="about" className="w-full pb-21 text-[#a28be0]">
+    <div name="about" className="float-up w-full pb-21 text-[#a28be0]">
       {" "}
       {/* Shifted background by 1px */}
       <div className="bg-[#000000] pb-20">
