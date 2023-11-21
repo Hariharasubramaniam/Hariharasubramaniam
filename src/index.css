@@ -69,35 +69,3 @@
     transition: transform 0.25s ease-in-out;
 
 }
-
-/* .tunnel-effect-00 {
-    transform: perspective(1000px) rotateX(-35deg) rotateY(2deg) rotateZ(0deg) scaleX(0.6) scaleY(3);
-  }
-
-.tunnel-effect-00-text{
-    transform: perspective(1000px) rotateX(-35deg) rotateY(2deg) rotateZ(0deg) scaleX(0.6) scaleY(3);
-  
-}
-
-.tunnel-effect-01 {
-    transform: perspective(1000px) rotateX(-75deg) rotateY(0deg) rotateZ(0deg) scaleX(0.75) scaleY(7) scaleZ(0.5)
-    
-  }
-
-  .tunnel-effect-01-text {
-    transform: perspective(1000px) rotateX(-75deg) rotateY(0deg) rotateZ(0deg) scaleX(0.75) scaleY(7) scaleZ(0.5)
-    
-  }
-
-  .tunnel-effect-02 {
-    transform: perspective(1000px) rotateX(-35deg) rotateY(-2deg) rotateZ(0deg) scaleX(0.6) scaleY(3);
-  }
-
-.tunnel-effect-02-text{
-    transform: perspective(1000px) rotateX(-35deg) rotateY(-2deg) rotateZ(0deg) scaleX(0.6) scaleY(3);
-  
-} */
-
-.float-up{
-    animation: float-up 2s ease-in-out infinite;
-}

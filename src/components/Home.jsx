@@ -2,7 +2,7 @@ import React from "react";
 import Typed from "react-typed";
 import Bg from "../assets/Background.mp4";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import MyPhoto from "../assets/Hari_new.JPG";
+import MyPhoto from "../assets/Photo.jpeg";
 import { Parallax } from "react-parallax";
 
 const Home = () => {

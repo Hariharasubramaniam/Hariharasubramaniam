@@ -13,7 +13,7 @@ const Work = () => {
           <p className="animate-pulse text-4xl font-bold inline border-b-4 text-gray-300 border-orange-600">
             Work
           </p>
-          <p className="text-2xl py-6">Check out some of my works🧑‍💻</p>
+          <p className="text-6xl py-6">Check out some of my works🧑‍💻</p>
         </div>
 
         {/* Container  */}
