@@ -1,7 +1,6 @@
 import React from "react";
 import { Parallax } from "react-parallax";
 import SkillsBG from "../assets/SkillsBG.mp4";
-import { motion } from "framer-motion";
 
 import Java from "../assets/java.png";
 import Python from "../assets/py.png";
@@ -12,6 +11,34 @@ import REACT from "../assets/react.png";
 import GitHub from "../assets/github.png";
 import CSS from "../assets/CSS.png";
 import Firebase from "../assets/Firebase.png";
+
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+const SkillItem = ({ image, alt, text }) => {
+  const [ref, inView] = useInView({
+    trigger: true,
+  });
+
+  const variants = {
+    notCenterScreen: { opacity: 0.25, scale: -0.25, y: 100 },
+    centerScreen: { opacity: 1, scale: 1, y: 0 },
+  };
+
+  return (
+    <motion.div
+      ref={ref}
+      initial="notCenterScreen"
+      animate={inView ? "centerScreen" : "notCenterScreen"}
+      variants={variants}
+      className="shadow-md shadow-[040c16] duration-500"
+      whileHover={{ scale: 1.1 }}
+    >
+      <img className="w-20 mx-auto scale-110" src={image} alt={alt} />
+      <p className="my-[15.1px] text-2xl font-bold ">{text}</p>
+    </motion.div>
+  );
+};
 
 const Skills = () => {
   return (
@@ -47,67 +74,19 @@ const Skills = () => {
             </p>
           </div>
           <div className="w-full grid grid-col-1 sm:grid-cols-3 gap-4 text-center py-8">
-            <div className="shadow-md shadow-[040c16] hover:scale-110 duration-500">
-              <img
-                className="w-20 mx-auto scale-110"
-                src={Java}
-                alt="Java icon"
-              />
-              <p className="my-[15.1px] text-2xl font-bold ">JAVA</p>
-            </div>
-
-            <div className="mt-[20.5px] shadow-md shadow-[040c16] hover:scale-110 duration-500">
-              <img
-                className="w-20 mx-auto scale-125"
-                src={Python}
-                alt="Python icon"
-              />
-              <p className="my-[23px] text-2xl font-bold ">PYTHON</p>
-            </div>
-            <div className="mt-6 shadow-md shadow-[040c16] hover:scale-110 duration-500">
-              <img
-                className="w-20 mx-auto scale-125"
-                src={HTML}
-                alt="Html icon"
-              />
-              <p className="my-[22px] text-2xl font-bold ">HTML</p>
-            </div>
+            <SkillItem image={Java} alt="Java icon" text="JAVA" />
+            <SkillItem image={Python} alt="Python icon" text="PYTHON" />
+            <SkillItem image={HTML} alt="Html icon" text="HTML" />
           </div>
           <div className="w-full grid grid-col-1 sm:grid-cols-3 text-center py-8">
-            <div className="shadow-md shadow-[040c16] hover:scale-110 duration-500">
-              <img className="w-20 mx-auto" src={CSS} alt="Html icon" />
-              <p className="my-[48px] text-2xl font-bold ">CSS</p>
-            </div>
-            <div className="shadow-md shadow-[040c16] hover:scale-110 duration-500">
-              <img
-                className="w-20 mx-auto"
-                src={Tailwind}
-                alt="Tailwind icon"
-              />
-              <p className="my-[48px] text-2xl font-bold ">TAILWIND</p>
-            </div>
-            <div className="shadow-md shadow-[040c16] hover:scale-110 duration-500">
-              <img className="w-20 mx-auto" src={JS} alt="Javascript icon" />
-              <p className="my-[48px] text-2xl font-bold ">JAVASCRIPT</p>
-            </div>
+            <SkillItem image={CSS} alt="CSS icon" text="CSS" />
+            <SkillItem image={Tailwind} alt="Tailwind icon" text="TAILWIND" />
+            <SkillItem image={JS} alt="Javascript icon" text="JAVASCRIPT" />
           </div>
           <div className="w-full grid grid-col-1 sm:grid-cols-3 text-center py-8">
-            <div className="shadow-md shadow-[040c16] hover:scale-110 duration-500">
-              <img
-                className="w-20 mx-auto"
-                src={Firebase}
-                alt="Firebase icon"
-              />
-              <p className="my-[48px] text-2xl font-bold ">FIREBASE</p>
-            </div>
-            <div className="shadow-md shadow-[040c16] hover:scale-110 duration-500">
-              <img className="w-20 mx-auto" src={REACT} alt="React icon" />
-              <p className="my-[48px] text-2xl font-bold ">REACT</p>
-            </div>
-            <div className="shadow-md shadow-[040c16] hover:scale-110 duration-500">
-              <img className="w-20 mx-auto" src={GitHub} alt="Github icon" />
-              <p className="my-[48px] text-2xl font-bold ">GITHUB</p>
-            </div>
+            <SkillItem image={Firebase} alt="Firebase icon" text="FIREBASE" />
+            <SkillItem image={REACT} alt="React icon" text="REACT" />
+            <SkillItem image={GitHub} alt="Github icon" text="GITHUB" />
           </div>
         </div>
       </div>
