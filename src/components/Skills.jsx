@@ -12,26 +12,27 @@ import GitHub from "../assets/github.png";
 import CSS from "../assets/CSS.png";
 import Firebase from "../assets/Firebase.png";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const SkillItem = ({ image, alt, text }) => {
   const [ref, inView] = useInView({
-    trigger: true,
+    trigger: "fade",
+    rootMargin: "-100px",
   });
 
   const variants = {
-    notCenterScreen: { opacity: 0.25, scale: -0.25, y: 100 },
-    centerScreen: { opacity: 1, scale: 1, y: 0 },
+    hidden: { opacity: 0, scale: 0.9, y: 100 },
+    visible: { opacity: 1, scale: 1, y: 0 },
   };
 
   return (
     <motion.div
       ref={ref}
-      initial="notCenterScreen"
-      animate={inView ? "centerScreen" : "notCenterScreen"}
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
       variants={variants}
-      className="shadow-md shadow-[040c16] duration-500"
+      className="shadow-md shadow-[040c16]"
       whileHover={{ scale: 1.1 }}
     >
       <img className="w-20 mx-auto scale-110" src={image} alt={alt} />
@@ -69,21 +70,21 @@ const Skills = () => {
             <p className="animate-pulse text-gray-300 text-4xl font-bold inline border-b-4 border-orange-600">
               Experience
             </p>
-            <p className="text-xl py-4">
+            <p className="text-3xl py-4">
               I can handle the following languages and frameworks.
             </p>
           </div>
-          <div className="w-full grid grid-col-1 sm:grid-cols-3 gap-4 text-center py-8">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-4 text-center py-8">
             <SkillItem image={Java} alt="Java icon" text="JAVA" />
             <SkillItem image={Python} alt="Python icon" text="PYTHON" />
             <SkillItem image={HTML} alt="Html icon" text="HTML" />
           </div>
-          <div className="w-full grid grid-col-1 sm:grid-cols-3 text-center py-8">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-3 text-center py-8">
             <SkillItem image={CSS} alt="CSS icon" text="CSS" />
             <SkillItem image={Tailwind} alt="Tailwind icon" text="TAILWIND" />
             <SkillItem image={JS} alt="Javascript icon" text="JAVASCRIPT" />
           </div>
-          <div className="w-full grid grid-col-1 sm:grid-cols-3 text-center py-8">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-3 text-center py-8">
             <SkillItem image={Firebase} alt="Firebase icon" text="FIREBASE" />
             <SkillItem image={REACT} alt="React icon" text="REACT" />
             <SkillItem image={GitHub} alt="Github icon" text="GITHUB" />

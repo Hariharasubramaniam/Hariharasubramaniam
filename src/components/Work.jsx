@@ -13,7 +13,7 @@ const Work = () => {
           <p className="animate-pulse text-4xl font-bold inline border-b-4 text-gray-300 border-orange-600">
             Work
           </p>
-          <p className="text-6xl py-6">Check out some of my works🧑‍💻</p>
+          <p className="text-3xl py-6">Check out some of my works🧑‍💻</p>
         </div>
 
         {/* Container  */}
@@ -24,7 +24,7 @@ const Work = () => {
             className="p-2 glowing-border group container rounded-md flex justify-center item-center mx-auto content-div"
           >
             {/* Hover Effects*/}
-            <div className="opacity-0 group-hover:opacity-100">
+            <div className="opacity-0 group-hover:opacity-50">
               <span className="text-2xl font-bold text-white tracking-wider">
                 Hand Gesture Recognition
               </span>

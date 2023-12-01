@@ -56,7 +56,7 @@ const Home = () => {
               />
             </h2>
           </div>
-          <p className="text-orange-500 py-4 max-w-[700px] text-[21px]">
+          <p className="text-orange-500 py-4 max-w-[700px] text-[25px]">
             I have a strong hand in Music.<br></br>Very much interested in
             front-end development🤩
           </p>
