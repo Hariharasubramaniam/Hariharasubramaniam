@@ -21,8 +21,20 @@ const SkillItem = ({ image, alt, text }) => {
     rootMargin: "-100px",
   });
 
-  const variants = {
-    hidden: { opacity: 0, scale: 0.9, y: 100 },
+  const variants1 = {
+    hidden: { opacity: 0.6, scale: 0.75, y: 100 },
+    visible: { opacity: 1, scale: 1, y: 0 },
+  };
+  const variants2 = {
+    hidden: { opacity: 0.6, scale: 0.75, x: 200, y: 200 },
+    visible: { opacity: 1, scale: 1, x: 0, y: 0 },
+  };
+  const variants3 = {
+    hidden: { opacity: 0.6, scale: 0.75, x: -200, y: 200 },
+    visible: { opacity: 1, scale: 1, x: 0, y: 0 },
+  };
+  const variants4 = {
+    hidden: { opacity: 0.3, scale: 0.75, y: -100 },
     visible: { opacity: 1, scale: 1, y: 0 },
   };
 
@@ -31,9 +43,10 @@ const SkillItem = ({ image, alt, text }) => {
       ref={ref}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
-      variants={variants}
+      variants={variants4}
       className="shadow-md shadow-[040c16]"
       whileHover={{ scale: 1.1 }}
+      transition={{ duration: 0.75 }}
     >
       <img className="w-20 mx-auto scale-110" src={image} alt={alt} />
       <p className="my-[15.1px] text-2xl font-bold ">{text}</p>
@@ -66,14 +79,14 @@ const Skills = () => {
         }}
       >
         <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-          <div>
+          <motion.div>
             <p className="animate-pulse text-gray-300 text-4xl font-bold inline border-b-4 border-orange-600">
               Experience
             </p>
             <p className="text-3xl py-4">
               I can handle the following languages and frameworks.
             </p>
-          </div>
+          </motion.div>
           <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-4 text-center py-8">
             <SkillItem image={Java} alt="Java icon" text="JAVA" />
             <SkillItem image={Python} alt="Python icon" text="PYTHON" />
