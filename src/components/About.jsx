@@ -11,7 +11,7 @@ const About = () => {
   });
 
   const variants1 = {
-    hidden: { opacity: 0.6, scale: 0.75, y: 200 },
+    hidden: { opacity: 0.6, scale: 0.75, y: 100 },
     visible: { opacity: 1, scale: 1, y: 0 },
   };
   const variants2 = {
@@ -23,7 +23,7 @@ const About = () => {
     visible: { opacity: 1, scale: 1, x: 0, y: 0 },
   };
   const variants4 = {
-    hidden: { opacity: 0.3, scale: 0.75, y: -500 },
+    hidden: { opacity: 0.3, scale: 0.75, y: -100 },
     visible: { opacity: 1, scale: 1, y: 0 },
   };
 
@@ -41,6 +41,7 @@ const About = () => {
               ref={ref}
               animate={inView ? "visible" : "hidden"}
               variants={variants4}
+              transition={{ duration: 0.45 }}
             >
               <p className="text-gray-300 animate-pulse text-4xl font-bold inline border-b-4 border-orange-600">
                 About
@@ -53,6 +54,7 @@ const About = () => {
               ref={ref}
               animate={inView ? "visible" : "hidden"}
               variants={variants3}
+              transition={{ duration: 1 }}
             >
               <p>Hi. I'm Hari, nice to meet you. Please take a look around.</p>
             </motion.div>
@@ -60,6 +62,7 @@ const About = () => {
               ref={ref}
               animate={inView ? "visible" : "hidden"}
               variants={variants2}
+              transition={{ duration: 1 }}
             >
               <p className="text-xl text-orange-400">
                 I'm a 3rd year Artificial Intelligence student at Amrita
