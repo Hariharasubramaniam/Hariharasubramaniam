@@ -1,23 +1,11 @@
 import React from "react";
 import Typed from "react-typed";
-import Bg from "../assets/Background.mp4";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import MyPhoto from "../assets/Photo.jpeg";
-import { Parallax } from "react-parallax";
+import MyPhoto from "../assets/DP.jpg";
 
 const Home = () => {
   return (
-    <div style={{ position: "relative" }}>
-      <Parallax bgImage={Bg} strength={1000}>
-        <video
-          autoPlay
-          loop
-          muted
-          style={{ width: "100%", height: "100%", objectFit: "contain" }}
-        >
-          <source src={Bg} type="video/mp4" />
-        </video>
-      </Parallax>
+    <div style={{ position: "relative", backgroundColor: "black", height: "100vh" }}>
       <div
         name="home"
         className="w-full h-full flex justify-center items-center"
@@ -26,13 +14,11 @@ const Home = () => {
           top: 0,
           left: 0,
           zIndex: 1,
-          backgroundColor: "rgba(0, 0, 0, 0.9)",
+          color: "white", // Make text color white for contrast
         }}
       >
         <div className="text-left pr-20">
-          <p className="text-orange-500 text-3xl font-semibold">
-            Hi, my name is
-          </p>
+          <p className="text-orange-500 text-3xl font-semibold">Hi, my name is</p>
           <h1 className="bg-gradient-to-r from-[#6cffdfe7] to-yellow-400 bg-clip-text text-transparent text-4xl my-2 sm:text-5xl font-bold">
             S.Hariharasubramaniam
           </h1>
@@ -57,8 +43,7 @@ const Home = () => {
             </h2>
           </div>
           <p className="text-orange-500 py-4 max-w-[700px] text-[25px]">
-            I have a strong hand in Music.<br></br>Very much interested in
-            front-end development🤩
+            I have a strong hand in Music.<br />Very much interested in front-end development🤩
           </p>
           <div>
             <button className="text-white rounded-lg group border-2 px-6 py-3 my-2 flex items-center hover:bg-orange-600 hover:border-orange-600">
